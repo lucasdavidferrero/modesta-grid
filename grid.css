@@ -1,0 +1,178 @@
+/* 
+Sistema de grillas simple con flexbox basado en 12 unidades.
+Autor: Lucas Ferrero (lucasdavidferrero@gmail.com)
+Versión: 1.0.0
+
+Terminología:
+container: contenedor principal.
+flex: fila que contiene celdas. Este tiene la propiedad display-flex.
+cell: celda (llamada column en algunos frameworks).
+*/
+/*
+    Tamaños de los breakpoints por defecto: 
+    small: 540px;
+    medium: 720px;
+    large: 960px;
+    extra large: 1140px;
+*/
+
+/* Variables */
+:root {
+    --pad: 5px; /* padding usado en los contenedores. Poner en 0 si no desea ningún espaciado dentro del contenedor. */
+    --gap: 5px; /* espacio entre las celdas. */
+    --max-wide: 1300px; /* max-width que se usa en el container */
+    --container-width: 80%; /* ancho del container */
+}
+* {
+    box-sizing: border-box;
+}
+/* Para testear */
+.debug {
+    border: 2px solid black;
+    padding: 2px;
+    position: relative;
+    margin-top: 25px !important;
+}
+.debug::before {
+    font-family: sans-serif;
+    content: 'Debug mode. -borders--> black: container | brow: row | blue: cells';
+    position: absolute;
+    top: -20px;
+}
+.debug > * {
+    border: 2px solid brown;
+    padding: 2px;
+}
+.debug > * [class^="cell"] {
+    border: 2px dashed blueviolet;
+}
+
+/* Estilos grilla */
+.container {
+    width: var(--container-width);
+    max-width: var(--max-wide);
+    margin: 0 auto;
+}
+.container-fluid {
+    width: 100%;
+    max-width: var(--max-wide);
+    margin: 0 auto;
+}
+.container.has-pad,
+.container-fluid.has-pad {
+    padding: var(--pad);
+}
+
+.flex {
+    display: flex;
+}
+.flex.has-gap > [class^="cell-"] + [class^="cell"] {
+    margin-left: var(--gap);
+}
+/* Lo ponemos en block cuando queremos activar el flex en cierto breakpoint. */
+.flex.on-small,
+.flex.on-medium,
+.flex.on-large,
+.flex.on-xl{
+    display: block;
+}
+
+/* celdas sin breakpoints */
+.cell-1        { width: 8.66666666667%; }
+.cell-2        { width: 17.3333333333%; }
+.cell-3        { width: 26%;            }
+.cell-4        { width: 34.6666666667%; }
+.cell-5        { width: 43.3333333333%; }
+.cell-6        { width: 52%;            }
+.cell-7        { width: 60.6666666667%; }
+.cell-8        { width: 69.3333333333%; }
+.cell-9        { width: 78.0%;          }
+.cell-10       { width: 88.6666666667%; }
+.cell-11       { width: 95.3333333333%; }
+.cell-12       { width: 100%            }
+
+/* 
+
+Breakpoints Mobile First
+
+*/
+
+/* small */
+@media screen and (min-width: 540px) {
+    .cell-sm-1        { width: 8.66666666667%; }
+    .cell-sm-2        { width: 17.3333333333%; }
+    .cell-sm-3        { width: 26%;            }
+    .cell-sm-4        { width: 34.6666666667%; }
+    .cell-sm-5        { width: 43.3333333333%; }
+    .cell-sm-6        { width: 52%;            }
+    .cell-sm-7        { width: 60.6666666667%; }
+    .cell-sm-8        { width: 69.3333333333%; }
+    .cell-sm-9        { width: 78.0%;          }
+    .cell-sm-10       { width: 88.6666666667%; }
+    .cell-sm-11       { width: 95.3333333333%; }
+    .cell-sm-12       { width: 100%            }
+
+    .flex.on-small {
+        display: flex;
+    }
+}
+
+/* medium */
+@media screen and (min-width: 720px) {
+    .cell-md-1        { width: 8.66666666667%; }
+    .cell-md-2        { width: 17.3333333333%; }
+    .cell-md-3        { width: 26%;            }
+    .cell-md-4        { width: 34.6666666667%; }
+    .cell-md-5        { width: 43.3333333333%; }
+    .cell-md-6        { width: 52%;            }
+    .cell-md-7        { width: 60.6666666667%; }
+    .cell-md-8        { width: 69.3333333333%; }
+    .cell-md-9        { width: 78.0%;          }
+    .cell-md-10       { width: 88.6666666667%; }
+    .cell-md-11       { width: 95.3333333333%; }
+    .cell-md-12       { width: 100%            }
+
+    .flex.on-medium {
+        display: flex;
+    }
+}
+
+/* large */
+@media screen and (min-width: 960px) {
+    .cell-l-1        { width: 8.66666666667%; }
+    .cell-l-2        { width: 17.3333333333%; }
+    .cell-l-3        { width: 26%;            }
+    .cell-l-4        { width: 34.6666666667%; }
+    .cell-l-5        { width: 43.3333333333%; }
+    .cell-l-6        { width: 52%;            }
+    .cell-l-7        { width: 60.6666666667%; }
+    .cell-l-8        { width: 69.3333333333%; }
+    .cell-l-9        { width: 78.0%;          }
+    .cell-l-10       { width: 88.6666666667%; }
+    .cell-l-11       { width: 95.3333333333%; }
+    .cell-l-12       { width: 100%            }
+
+    .flex.on-large {
+        display: flex;
+    }
+}
+
+/* extra large */
+@media screen and (min-width: 1140px){
+    .cell-xl-1        { width: 8.66666666667%; }
+    .cell-xl-2        { width: 17.3333333333%; }
+    .cell-xl-3        { width: 26%;            }
+    .cell-xl-4        { width: 34.6666666667%; }
+    .cell-xl-5        { width: 43.3333333333%; }
+    .cell-xl-6        { width: 52%;            }
+    .cell-xl-7        { width: 60.6666666667%; }
+    .cell-xl-8        { width: 69.3333333333%; }
+    .cell-xl-9        { width: 78.0%;          }
+    .cell-xl-10       { width: 88.6666666667%; }
+    .cell-xl-11       { width: 95.3333333333%; }
+    .cell-xl-12       { width: 100%            }
+
+    .flex.on-xl {
+        display: flex;
+    }
+}
