@@ -20,7 +20,7 @@ cell: celda (llamada column en algunos frameworks).
 :root {
     --pad: 5px; /* padding usado en los contenedores. Poner en 0 si no desea ningún espaciado dentro del contenedor. */
     --gap: 5px; /* espacio entre las celdas. */
-    --max-wide: 1300px; /* max-width que se usa en el container */
+    --max-wide: 1300px; /* max-width que se usa en el container. Poner en 'initial' si no se requiere un ancho máximo. */
     --container-width: 80%; /* ancho del container */
 }
 * {
@@ -69,6 +69,11 @@ cell: celda (llamada column en algunos frameworks).
 .flex.has-gap > [class^="cell-"] + [class^="cell"] {
     margin-left: var(--gap);
 }
+/* TODO: agregas has-gap para cada breakpoint
+
+*/
+
+
 /* Lo ponemos en block cuando queremos activar el flex en cierto breakpoint. */
 .flex.on-small,
 .flex.on-medium,
