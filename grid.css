@@ -83,18 +83,18 @@ cell: celda (llamada column en algunos frameworks).
 }
 
 /* celdas sin breakpoints */
-.cell-1        { width: 8.66666666667%; }
-.cell-2        { width: 17.3333333333%; }
-.cell-3        { width: 26%;            }
-.cell-4        { width: 34.6666666667%; }
-.cell-5        { width: 43.3333333333%; }
-.cell-6        { width: 52%;            }
-.cell-7        { width: 60.6666666667%; }
-.cell-8        { width: 69.3333333333%; }
-.cell-9        { width: 78.0%;          }
-.cell-10       { width: 88.6666666667%; }
-.cell-11       { width: 95.3333333333%; }
-.cell-12       { width: 100%            }
+.cell-1        { width: 8.33‬%        }
+.cell-2        { width: 16.66‬‬‬%       }
+.cell-3        { width: 25‬%          }
+.cell-4        { width: 33.33%       }
+.cell-5        { width: 41.66‬%       }
+.cell-6        { width: 50%          }
+.cell-7        { width: 58.33%       }
+.cell-8        { width: 66.66%       }
+.cell-9        { width: 75%          }
+.cell-10       { width: 83.33%       }
+.cell-11       { width: 91.66%       }
+.cell-12       { width: 100%         }
 
 /* 
 
@@ -104,18 +104,18 @@ Breakpoints Mobile First
 
 /* small */
 @media screen and (min-width: 540px) {
-    .cell-sm-1        { width: 8.66666666667%; }
-    .cell-sm-2        { width: 17.3333333333%; }
-    .cell-sm-3        { width: 26%;            }
-    .cell-sm-4        { width: 34.6666666667%; }
-    .cell-sm-5        { width: 43.3333333333%; }
-    .cell-sm-6        { width: 52%;            }
-    .cell-sm-7        { width: 60.6666666667%; }
-    .cell-sm-8        { width: 69.3333333333%; }
-    .cell-sm-9        { width: 78.0%;          }
-    .cell-sm-10       { width: 88.6666666667%; }
-    .cell-sm-11       { width: 95.3333333333%; }
-    .cell-sm-12       { width: 100%            }
+    .cell-sm-1        { width: 8.33‬%        }
+    .cell-sm-2        { width: 16.66‬‬‬%       }
+    .cell-sm-3        { width: 25‬%          }
+    .cell-sm-4        { width: 33.33%       }
+    .cell-sm-5        { width: 41.66‬%       }
+    .cell-sm-6        { width: 50%          }
+    .cell-sm-7        { width: 58.33%       }
+    .cell-sm-8        { width: 66.66%       }
+    .cell-sm-9        { width: 75%          }
+    .cell-sm-10       { width: 83.33%       }
+    .cell-sm-11       { width: 91.66%       }
+    .cell-sm-12       { width: 100%         }
 
     .flex.on-small {
         display: flex;
@@ -124,18 +124,18 @@ Breakpoints Mobile First
 
 /* medium */
 @media screen and (min-width: 720px) {
-    .cell-md-1        { width: 8.66666666667%; }
-    .cell-md-2        { width: 17.3333333333%; }
-    .cell-md-3        { width: 26%;            }
-    .cell-md-4        { width: 34.6666666667%; }
-    .cell-md-5        { width: 43.3333333333%; }
-    .cell-md-6        { width: 52%;            }
-    .cell-md-7        { width: 60.6666666667%; }
-    .cell-md-8        { width: 69.3333333333%; }
-    .cell-md-9        { width: 78.0%;          }
-    .cell-md-10       { width: 88.6666666667%; }
-    .cell-md-11       { width: 95.3333333333%; }
-    .cell-md-12       { width: 100%            }
+    .cell-md-1        { width: 8.33‬%        }
+    .cell-md-2        { width: 16.66‬‬‬%       }
+    .cell-md-3        { width: 25‬%          }
+    .cell-md-4        { width: 33.33%       }
+    .cell-md-5        { width: 41.66‬%       }
+    .cell-md-6        { width: 50%          }
+    .cell-md-7        { width: 58.33%       }
+    .cell-md-8        { width: 66.66%       }
+    .cell-md-9        { width: 75%          }
+    .cell-md-10       { width: 83.33%       }
+    .cell-md-11       { width: 91.66%       }
+    .cell-md-12       { width: 100%         }
 
     .flex.on-medium {
         display: flex;
@@ -144,18 +144,18 @@ Breakpoints Mobile First
 
 /* large */
 @media screen and (min-width: 960px) {
-    .cell-l-1        { width: 8.66666666667%; }
-    .cell-l-2        { width: 17.3333333333%; }
-    .cell-l-3        { width: 26%;            }
-    .cell-l-4        { width: 34.6666666667%; }
-    .cell-l-5        { width: 43.3333333333%; }
-    .cell-l-6        { width: 52%;            }
-    .cell-l-7        { width: 60.6666666667%; }
-    .cell-l-8        { width: 69.3333333333%; }
-    .cell-l-9        { width: 78.0%;          }
-    .cell-l-10       { width: 88.6666666667%; }
-    .cell-l-11       { width: 95.3333333333%; }
-    .cell-l-12       { width: 100%            }
+    .cell-lg-1        { width: 8.33‬%        }
+    .cell-lg-2        { width: 16.66‬‬‬%       }
+    .cell-lg-3        { width: 25‬%          }
+    .cell-lg-4        { width: 33.33%       }
+    .cell-lg-5        { width: 41.66‬%       }
+    .cell-lg-6        { width: 50%          }
+    .cell-lg-7        { width: 58.33%       }
+    .cell-lg-8        { width: 66.66%       }
+    .cell-lg-9        { width: 75%          }
+    .cell-lg-10       { width: 83.33%       }
+    .cell-lg-11       { width: 91.66%       }
+    .cell-lg-12       { width: 100%         }
 
     .flex.on-large {
         display: flex;
@@ -163,19 +163,19 @@ Breakpoints Mobile First
 }
 
 /* extra large */
-@media screen and (min-width: 1140px){
-    .cell-xl-1        { width: 8.66666666667%; }
-    .cell-xl-2        { width: 17.3333333333%; }
-    .cell-xl-3        { width: 26%;            }
-    .cell-xl-4        { width: 34.6666666667%; }
-    .cell-xl-5        { width: 43.3333333333%; }
-    .cell-xl-6        { width: 52%;            }
-    .cell-xl-7        { width: 60.6666666667%; }
-    .cell-xl-8        { width: 69.3333333333%; }
-    .cell-xl-9        { width: 78.0%;          }
-    .cell-xl-10       { width: 88.6666666667%; }
-    .cell-xl-11       { width: 95.3333333333%; }
-    .cell-xl-12       { width: 100%            }
+@media screen and (min-width: 1140px) {
+    .cell-xl-1        { width: 8.33‬%        }
+    .cell-xl-2        { width: 16.66‬‬‬%       }
+    .cell-xl-3        { width: 25‬%          }
+    .cell-xl-4        { width: 33.33%       }
+    .cell-xl-5        { width: 41.66‬%       }
+    .cell-xl-6        { width: 50%          }
+    .cell-xl-7        { width: 58.33%       }
+    .cell-xl-8        { width: 66.66%       }
+    .cell-xl-9        { width: 75%          }
+    .cell-xl-10       { width: 83.33%       }
+    .cell-xl-11       { width: 91.66%       }
+    .cell-xl-12       { width: 100%         }
 
     .flex.on-xl {
         display: flex;
